@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/p/05424e0b270a/</loc>
+    <loc>https://blogqwq-pi.vercel.app/notations/index.html</loc>
     
     <lastmod>2026-10-18</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/p/76bf6930ffc4/</loc>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/05424e0b270a/</loc>
     
     <lastmod>2026-10-18</lastmod>
     
@@ -20,7 +20,16 @@
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/p/01c3f47a27f2/</loc>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/76bf6930ffc4/</loc>
+    
+    <lastmod>2026-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/01c3f47a27f2/</loc>
     
     <lastmod>2026-10-17</lastmod>
     
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/p/fef5d3fd9b0f/</loc>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/fef5d3fd9b0f/</loc>
     
     <lastmod>2026-10-17</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/p/ff073a56db5a/</loc>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/ff073a56db5a/</loc>
     
     <lastmod>2026-10-17</lastmod>
     
@@ -101,14 +110,7 @@
 
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogqwq-pi.vercel.app/tags/%E7%9E%8E%E6%90%9E/</loc>
+    <loc>https://blogqwq-pi.vercel.app/tags/%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -122,7 +124,14 @@
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/tags/%E5%9B%BE%E7%89%87/</loc>
+    <loc>https://blogqwq-pi.vercel.app/tags/%E7%9E%8E%E6%90%9E/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogqwq-pi.vercel.app/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

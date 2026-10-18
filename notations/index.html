@@ -1,0 +1,546 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>博客数学符号及记号参照表 | 拾光筆記</title><meta name="author" content="q779"><meta name="copyright" content="q779"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F5DC"><meta name="description" content="博客数学符号及记号参照表  上次更新本页面是 2026年10月18日。  这里约定了本人习惯使用的一些数学记号的含义，有一些写法并不怎么严谨…… 不过这个页面出现在这里一定是为了测试本站的数学公式有没有正常生效……  一、常用 \(\mathcal{O}(f(n))\) ：渐进上界记号，用于表示算法的复杂度上界。 \(a \gets b+c\) ：将变量 \(a\) 赋值为 \(b+c\) \(a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="博客数学符号及记号参照表">
+<meta property="og:url" content="https://blogqwq-pi.vercel.app/notations/index.html">
+<meta property="og:site_name" content="拾光筆記">
+<meta property="og:description" content="博客数学符号及记号参照表  上次更新本页面是 2026年10月18日。  这里约定了本人习惯使用的一些数学记号的含义，有一些写法并不怎么严谨…… 不过这个页面出现在这里一定是为了测试本站的数学公式有没有正常生效……  一、常用 \(\mathcal{O}(f(n))\) ：渐进上界记号，用于表示算法的复杂度上界。 \(a \gets b+c\) ：将变量 \(a\) 赋值为 \(b+c\) \(a">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blogqwq-pi.vercel.app/qwq/img/tx.webp">
+<meta property="article:published_time" content="2022-09-24T14:16:21.000Z">
+<meta property="article:modified_time" content="2026-10-18T13:40:45.064Z">
+<meta property="article:author" content="q779">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blogqwq-pi.vercel.app/qwq/img/tx.webp"><script type="application/ld+json"></script><link rel="shortcut icon" href="/qwq/img/favicon.ico"><link rel="canonical" href="https://blogqwq-pi.vercel.app/notations/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.14/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#F5F5DC')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":true,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '博客数学符号及记号参照表',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'notations'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/qwq/img/bg.webp);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/tx.webp" onerror="this.onerror=null;this.src='/qwq/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/notations/"><i class="fa-fw fas fa-signature"></i><span> 符号</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友联</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page type-notations" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/qwq/img/bg.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/logo.webp" alt="Logo"><span class="site-name">拾光筆記</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/notations/"><i class="fa-fw fas fa-signature"></i><span> 符号</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友联</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">博客数学符号及记号参照表</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="博客数学符号及记号参照表">博客数学符号及记号参照表</h1>
+<blockquote>
+<p>上次更新本页面是 2026年10月18日。</p>
+</blockquote>
+<p>这里约定了本人习惯使用的一些数学记号的含义，有一些写法并不怎么严谨……</p>
+<p>不过这个页面出现在这里一定是为了测试本站的数学公式有没有正常生效……</p>
+<hr />
+<h2 id="一常用">一、常用</h2>
+<p><span class="math inline">\(\mathcal{O}(f(n))\)</span>
+：渐进上界记号，用于表示算法的复杂度上界。</p>
+<p><span class="math inline">\(a \gets b+c\)</span> ：将变量 <span
+class="math inline">\(a\)</span> 赋值为 <span
+class="math inline">\(b+c\)</span></p>
+<p><span class="math inline">\(a\uparrow b+c\)</span> ：表示 <span
+class="math inline">\(a\gets \max\{a,b+c\}\)</span> ，其中 <span
+class="math inline">\(\uparrow\)</span> 的优先级极低。有时表示
+<code>a += b+c</code> ，会特殊说明。</p>
+<p><span class="math inline">\(a\downarrow b+c\)</span> ：表示 <span
+class="math inline">\(a\gets \min\{a,b+c\}\)</span> ，其中 <span
+class="math inline">\(\downarrow\)</span> 的优先级极低。</p>
+<p><span class="math inline">\(\land\)</span> ：逻辑与。一般用 <span
+class="math inline">\(\&amp;\)</span> 或者 <span
+class="math inline">\(\mathrm{and}\)</span> 表示二进制按位与。</p>
+<p><span class="math inline">\(\lor\)</span> ：逻辑或。一般用 <span
+class="math inline">\(\mathrm{or}\)</span> 表示二进制按位或。</p>
+<blockquote>
+<p>从 20240119 起，逻辑运算将采用新的表示，如下：</p>
+<ul>
+<li>当出现在若干等式间时，如 <span class="math inline">\(\Delta =
+0\,\land\,u = v \ne 0\)</span>
+，且<strong>等式间有明显空格</strong>，则表示逻辑与，即「且」</li>
+<li>当出现在两个变量间时，如 <span class="math inline">\((u \land
+\frac{\Delta}{2}) = 0\)</span> 或 <span class="math inline">\((x \lor y)
+= \sum
+|S|\)</span>，<strong>有明显括号</strong>，则表示二进制按位与。</li>
+<li><span class="math inline">\(\mathrm{and}\)</span>
+将表示逻辑与，而不再表示二进制按位与。</li>
+</ul>
+<p>至于为什么这么改，因为 <span class="math inline">\(\&amp;\)</span>
+实在是太难看了。</p>
+</blockquote>
+<p><span
+class="math inline">\([p(x)]=\begin{cases}1,&amp;p(x)=\mathtt{true} \\
+0,&amp;p(x)=\mathtt{false}\end{cases}\)</span></p>
+<p><span class="math inline">\(n!\)</span> ：表示 <span
+class="math inline">\(n\)</span> 的阶乘。注意 <span
+class="math inline">\(2n!\)</span> 表示 <span
+class="math inline">\(2\times n!\)</span> ，<span
+class="math inline">\((2n)!\)</span> 表示 <span
+class="math inline">\(2n\)</span> 的阶乘。</p>
+<p><span class="math inline">\(\sum a_i\)</span> ：对序列/数组 <span
+class="math inline">\(a_i\)</span> 求和。</p>
+<p><span class="math inline">\(\prod a_i\)</span> ：对序列/数组 <span
+class="math inline">\(a_i\)</span> 求积。</p>
+<p><span class="math inline">\(\bigoplus_{i=1}^{n} x_i = x_1 \oplus x_2
+\oplus \cdots \oplus x_n\)</span> ，其中 <span
+class="math inline">\(\oplus\)</span> 一般表示二进制按位异或。</p>
+<p><span class="math inline">\(\binom{n}{m}\)</span> 或 <span
+class="math inline">\(\mathrm{C}_n^{m}\)</span> ：从 <span
+class="math inline">\(n\)</span> 个不同元素中取 <span
+class="math inline">\(m(m\le n)\)</span> 个不同元素的方案数。</p>
+<p><span class="math inline">\(\binom{r}{n} = \prod_{k=1}^{n}\frac{r - k
++ 1}{k}\quad(r \in \mathbb{C})\)</span> ，即二项式系数。</p>
+<p><span class="math inline">\(f^n(x)\)</span> ：表示 <span
+class="math inline">\(f\)</span> 的 <span
+class="math inline">\(n\)</span> 次复合，即 <span
+class="math inline">\(f(f(\cdots f(x)))\)</span> ，其中有 <span
+class="math inline">\(n\)</span> 个 <span
+class="math inline">\(f\)</span> 。</p>
+<p><span class="math inline">\(f^{(n)}(x)\)</span> ：表示 <span
+class="math inline">\(f\)</span> 的 <span
+class="math inline">\(n\)</span> 阶导数。一般用 <span
+class="math inline">\(f^{\prime}(x)\)</span> 表示一阶导数，<span
+class="math inline">\(f^{\prime \prime}(x)\)</span> 表示二阶导数。</p>
+<p><span class="math inline">\(f^{\star}(x)=k\)</span> ：最小的 <span
+class="math inline">\(n\)</span> 使得 <span
+class="math inline">\(f^{n}(x) = k\)</span> ，注意这里是 <span
+class="math inline">\(n\)</span> 次复合。例如 <span
+class="math inline">\(\mathcal{O}(\varphi^{\star}(x)=1)\)</span> 。</p>
+<p><span class="math inline">\([x^n]f(x)\)</span> ：表示 <span
+class="math inline">\(f(x)\)</span> 的第 <span
+class="math inline">\(n\)</span> 项系数。</p>
+<p><span class="math inline">\({\displaystyle \int f(x)\,dx}\)</span>
+：表示 <span class="math inline">\(f(x)\)</span> 的不定积分。</p>
+<p><span class="math inline">\(\left.x^2+x\right|_{x=2}\)</span> 将
+<span class="math inline">\(x\)</span> 赋值为 <span
+class="math inline">\(2\)</span> 后的答案。</p>
+<p><span
+class="math inline">\(\varphi,\varepsilon,\vartheta,\pi,\mathrm{e}\)</span>
+前三个是个人书写习惯而使用，后面对应圆周率和自然常数（注意与离心率 <span
+class="math inline">\(e\)</span> 区分）</p>
+<hr />
+<h2 id="二数论函数">二、数论函数</h2>
+<p><span class="math inline">\(\gcd(a,b)\)</span> ：整数 <span
+class="math inline">\(a,b\)</span>
+的最大公约数（最大公约数为非负整数）。</p>
+<p><span class="math inline">\(\mathrm{lcm}(a,b)\)</span> ：整数 <span
+class="math inline">\(a,b\)</span>​
+的最小公倍数（最大公约数为非负整数）。</p>
+<p><span class="math inline">\(\epsilon(n)\)</span> ：单位函数 <span
+class="math inline">\(\epsilon(n)=[n=1]\)</span> 。</p>
+<p><span class="math inline">\(\mathbf{1}(n)\)</span> ：常数函数 <span
+class="math inline">\(\mathbf{1}(n)=1\)</span> ，有时候可能用 <span
+class="math inline">\(I(n)\)</span> 代替。</p>
+<p><span class="math inline">\(\mathrm{id}(n)\)</span> ：恒等函数 <span
+class="math inline">\(\mathrm{id}(n)=n\)</span>​ 。</p>
+<p><span class="math inline">\(\zeta(n)\)</span> ：一般指黎曼函数。</p>
+<p><span class="math inline">\(\varphi(n)\)</span>
+：一般指欧拉函数。</p>
+<p><span class="math inline">\(\mu(n)\)</span>​
+：一般指莫比乌斯函数。</p>
+<p><span class="math inline">\(\pi(n)\)</span>
+：一般指素数计数函数。</p>
+<p><span class="math inline">\(\omega(n)\)</span> ：一般指 <span
+class="math inline">\(n\)</span> 的不同素因子个数。</p>
+<p><span class="math inline">\(d(n)\)</span> ：一般指 <span
+class="math inline">\(n\)</span> 的因子个数。</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(n \le\)</span></th>
+<th><span class="math inline">\(10^{1}\)</span></th>
+<th><span class="math inline">\(10^{2}\)</span></th>
+<th><span class="math inline">\(10^{3}\)</span></th>
+<th><span class="math inline">\(10^{4}\)</span></th>
+<th><span class="math inline">\(10^{5}\)</span></th>
+<th><span class="math inline">\(10^{6}\)</span></th>
+<th><span class="math inline">\(10^{7}\)</span></th>
+<th><span class="math inline">\(10^{8}\)</span></th>
+<th><span class="math inline">\(10^{9}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\max\{\omega(n)\}\)</span></td>
+<td><span class="math inline">\(\tt{2}\)</span></td>
+<td><span class="math inline">\(\tt{3}\)</span></td>
+<td><span class="math inline">\(\tt{4}\)</span></td>
+<td><span class="math inline">\(\tt{5}\)</span></td>
+<td><span class="math inline">\(\tt{6}\)</span></td>
+<td><span class="math inline">\(\tt{7}\)</span></td>
+<td><span class="math inline">\(\tt{8}\)</span></td>
+<td><span class="math inline">\(\tt{8}\)</span></td>
+<td><span class="math inline">\(\tt{9}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\max\{d(n)\}\)</span></td>
+<td><span class="math inline">\(\tt{4}\)</span></td>
+<td><span class="math inline">\(\tt{12}\)</span></td>
+<td><span class="math inline">\(\tt{32}\)</span></td>
+<td><span class="math inline">\(\tt{64}\)</span></td>
+<td><span class="math inline">\(\tt{128}\)</span></td>
+<td><span class="math inline">\(\tt{240}\)</span></td>
+<td><span class="math inline">\(\tt{448}\)</span></td>
+<td><span class="math inline">\(\tt{768}\)</span></td>
+<td><span class="math inline">\(\tt{1344}\)</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(n \le\)</span></th>
+<th><span class="math inline">\(10^{10}\)</span></th>
+<th><span class="math inline">\(10^{11}\)</span></th>
+<th><span class="math inline">\(10^{12}\)</span></th>
+<th><span class="math inline">\(10^{13}\)</span></th>
+<th><span class="math inline">\(10^{14}\)</span></th>
+<th><span class="math inline">\(10^{15}\)</span></th>
+<th><span class="math inline">\(10^{16}\)</span></th>
+<th><span class="math inline">\(10^{17}\)</span></th>
+<th><span class="math inline">\(10^{18}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\max\{\omega(n)\}\)</span></td>
+<td><span class="math inline">\(\tt{10}\)</span></td>
+<td><span class="math inline">\(\tt{10}\)</span></td>
+<td><span class="math inline">\(\tt{11}\)</span></td>
+<td><span class="math inline">\(\tt{12}\)</span></td>
+<td><span class="math inline">\(\tt{12}\)</span></td>
+<td><span class="math inline">\(\tt{13}\)</span></td>
+<td><span class="math inline">\(\tt{13}\)</span></td>
+<td><span class="math inline">\(\tt{14}\)</span></td>
+<td><span class="math inline">\(\tt{15}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\max\{d(n)\}\)</span></td>
+<td><span class="math inline">\(\tt{2304}\)</span></td>
+<td><span class="math inline">\(\tt{4032}\)</span></td>
+<td><span class="math inline">\(\tt{6720}\)</span></td>
+<td><span class="math inline">\(\tt{10752}\)</span></td>
+<td><span class="math inline">\(\tt{17280}\)</span></td>
+<td><span class="math inline">\(\tt{26880}\)</span></td>
+<td><span class="math inline">\(\tt{41472}\)</span></td>
+<td><span class="math inline">\(\tt{64512}\)</span></td>
+<td><span class="math inline">\(\tt{103680}\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三变量函数命名">三、变量&amp;函数命名</h2>
+<blockquote>
+<p>因为是 OIer ，所以有些变量的定义不止一个字母。</p>
+<p>下面这些都是常用的含义，如果有区别会在文章内特别说明的。</p>
+</blockquote>
+<p><span class="math inline">\(\epsilon\)</span>
+：一般表示较小的常数，或者精度范围（如 <code>eps=1e-14</code>
+）等含义。</p>
+<p><span class="math inline">\(\mathtt{ans}\)</span> ：通常表示答案。是
+<span class="math inline">\(\mathtt{answer}\)</span> 的缩写。</p>
+<p><span class="math inline">\(\mathtt{sz}_u\)</span> 或 <span
+class="math inline">\(\mathtt{size}(u)\)</span> ： 一般表示某个集合
+<span class="math inline">\(u\)</span> 的大小，或者 <span
+class="math inline">\(u\)</span> 所在子树的大小等含义。</p>
+<p><span class="math inline">\(dp[i][j]\)</span> 或 <span
+class="math inline">\(f_{i,j}\)</span> ：dp的状态，更正式的写法应该是
+<span class="math inline">\(f(i,j)\)</span> ，可能算一个二元函数。</p>
+<p><span class="math inline">\(\mathtt{rt}(u)\)</span> 或 <span
+class="math inline">\(\mathtt{rt}_u\)</span> ：一般表示 <span
+class="math inline">\(u\)</span> 所在的树的根结点，是 <span
+class="math inline">\(\mathtt{root}\)</span> 的缩写。</p>
+<p><span class="math inline">\(\mathtt{popc}(A)\)</span> ：表示集合
+<span class="math inline">\(A\)</span> 的基数（元素个数），源于函数
+<code>__builtin_popcount()</code></p>
+<hr />
+<h2 id="四集合">四、集合</h2>
+<p><span class="math inline">\(\bigcup_{i=1}^{n} A_i = A_1 \cup A_2 \cup
+\cdots \cup A_n\)</span> 。</p>
+<p><span class="math inline">\(\bigcap_{i=1}^{n} A_i = A_1 \cap A_2 \cap
+\cdots \cap A_n\)</span> 。</p>
+<p><span class="math inline">\(A\setminus B\)</span> ：<span
+class="math inline">\(B\)</span> 对 <span
+class="math inline">\(A\)</span> 的相对补集（可以理解为 <span
+class="math inline">\(A\)</span> 去掉 <span class="math inline">\(A\cap
+B\)</span> 后剩余的部分）</p>
+<p><span class="math inline">\(\sim\!A\)</span> ：<span
+class="math inline">\(A\)</span> 的绝对补集（对于全集的补集）</p>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/tx.webp" onerror="this.onerror=null;this.src='/qwq/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">q779</div><div class="author-info-description">哒哒哒哒哒，好想玩原神~</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/q779"><i class="fab fa-github"></i><span>点点关注喵~</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/p/2026/76bf6930ffc4/" title="歌曲推荐 20261018"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/p214.webp" onerror="this.onerror=null;this.src='/qwq/img/404.jpg'" alt="歌曲推荐 20261018"/></a><div class="content"><a class="title" href="/p/2026/76bf6930ffc4/" title="歌曲推荐 20261018">歌曲推荐 20261018</a><time datetime="2026-10-18T04:31:05.604Z" title="发表于 2026-10-18 12:31:05">2026-10-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/2026/01c3f47a27f2/" title="草台班子这一块"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/p190.webp" onerror="this.onerror=null;this.src='/qwq/img/404.jpg'" alt="草台班子这一块"/></a><div class="content"><a class="title" href="/p/2026/01c3f47a27f2/" title="草台班子这一块">草台班子这一块</a><time datetime="2026-10-17T09:11:54.077Z" title="发表于 2026-10-17 17:11:54">2026-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/2026/fef5d3fd9b0f/" title="关于座右铭"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/p168.webp" onerror="this.onerror=null;this.src='/qwq/img/404.jpg'" alt="关于座右铭"/></a><div class="content"><a class="title" href="/p/2026/fef5d3fd9b0f/" title="关于座右铭">关于座右铭</a><time datetime="2026-10-17T04:00:48.806Z" title="发表于 2026-10-17 12:00:48">2026-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/2026/05424e0b270a/" title="本站的封面图"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/bg.webp" onerror="this.onerror=null;this.src='/qwq/img/404.jpg'" alt="本站的封面图"/></a><div class="content"><a class="title" href="/p/2026/05424e0b270a/" title="本站的封面图">本站的封面图</a><time datetime="2026-10-16T16:37:12.801Z" title="发表于 2026-10-17 00:37:12">2026-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/2026/ff073a56db5a/" title="玻璃钢是什么材料？"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/qwq/img/p202.webp" onerror="this.onerror=null;this.src='/qwq/img/404.jpg'" alt="玻璃钢是什么材料？"/></a><div class="content"><a class="title" href="/p/2026/ff073a56db5a/" title="玻璃钢是什么材料？">玻璃钢是什么材料？</a><time datetime="2026-10-16T15:51:12.000Z" title="发表于 2026-10-16 23:51:12">2026-10-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/"><span class="card-category-list-name">音乐</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%9B%BE%E7%89%87/" style="font-size: 1.1em; color: #999">图片</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 1.1em; color: #999">音乐</a> <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/" style="font-size: 1.5em; color: #99a9bf">小知识</a> <a href="/tags/%E7%9E%8E%E6%90%9E/" style="font-size: 1.1em; color: #999">瞎搞</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/10/">
+            <span class="card-archive-list-date">
+              十月 2026
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2026-10-15T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">1.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-10-18T14:19:56.147Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/qwq/img/bg.webp);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By q779</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.7.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><script src="/js/tw_cn.js?v=5.7.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.14/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const changeScriptToMath = article => {
+    article.querySelectorAll('script[type^="math/tex"]').forEach(el => {
+      const display = /mode=display/.test(el.type)
+      const node = document.createElement(display ? 'div' : 'span')
+      node.textContent = display
+        ? `$$${el.textContent}$$`
+        : `$${el.textContent}$`
+      el.parentNode.replaceChild(node, el)
+    })
+  }
+
+  const loadMathjax = () => {
+    const article = document.getElementById('article-container')
+    if (!article || article.querySelector('.hbe-container')) return
+    changeScriptToMath(article)
+
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem',
+            'ui/lazy'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          lazyMargin: '200px',
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = '/qwq_cdn/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.typesetClear()
+      MathJax.typesetPromise([ article ])
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.7.0"></script></div></div></body></html>
