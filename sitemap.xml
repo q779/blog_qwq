@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/2b5b679b1893/</loc>
+    
+    <lastmod>2026-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogqwq-pi.vercel.app/p/2026/8f126697a8a7/</loc>
+    
+    <lastmod>2026-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blogqwq-pi.vercel.app/about/index.html</loc>
     
     <lastmod>2026-10-23</lastmod>
@@ -57,15 +75,6 @@
   
   <url>
     <loc>https://blogqwq-pi.vercel.app/p/2026/bd5c1d16864b/</loc>
-    
-    <lastmod>2026-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogqwq-pi.vercel.app/p/2026/8f126697a8a7/</loc>
     
     <lastmod>2026-10-18</lastmod>
     
@@ -236,14 +245,14 @@
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/categories/%E9%9F%B3%E4%B9%90/</loc>
+    <loc>https://blogqwq-pi.vercel.app/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blogqwq-pi.vercel.app/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blogqwq-pi.vercel.app/categories/%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
