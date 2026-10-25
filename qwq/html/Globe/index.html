@@ -6,13 +6,13 @@
     <title>Globe</title>
 </head>
 
-<script src="/qwq/html/Globe_files/globe.gl"></script>
+<script src="./Globe_files/globe.gl"></script>
 
 <body>
   <div id="globeViz"></div>
 
   <script>
-    fetch('/qwq/html/Globe_files/custom.geo.json')
+    fetch('./Globe_files/custom.geo.json')
     .then(res => res.json())
     .then(countries => {
         // 预先给每个国家分配一个固定颜色，避免每次重绘时随机变色
@@ -23,7 +23,7 @@
         });
 
         const world = new Globe(document.getElementById('globeViz'))
-        .globeImageUrl('/qwq/html/Globe_files/earth-dark.jpg')
+        .globeImageUrl('./Globe_files/earth-dark.jpg')
         .polygonsData(countries.features)
 
         // 稍微抬高，避免和地球表面重叠闪烁

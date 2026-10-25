@@ -1,0 +1,159 @@
+<!--
+
+link : http://www.wujiayi.vip
+name : 吴佳轶 | WuJiaYi
+mail : hello@wujiayi.vip
+微信公众号： 吴佳轶同学 
+
+-->
+
+<html>
+	<head>
+    	<meta charset="UTF-8">
+
+		<!--引入jQuery框架-->
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<!--引入jVectorMap库-->
+		<script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
+		<!--引入样式表-->
+		<link href="js/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen">
+
+
+		<script type="text/javascript" src="js/jquery-jvectormap-world-mill.js"></script>
+		<!--引入中国地图数据库-->
+		<!-- <script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script> -->
+		<!--引入美国地图数据库-->
+		<!--script type="text/javascript" src="js/jquery-jvectormap-us-aea.js"></script-->
+		<!--引入世界地图数据库-->
+		<!--script type="text/javascript" src="js/jquery-jvectormap-world-mill.js"></script-->
+
+	</head>
+<body>
+	<!--background-color: 地图背景颜色-->
+	<div id="map" style="background-color:#353535"> </div>
+	<script>
+		$('#map').vectorMap({
+
+			// 此处更改地图
+			// map: 'cn_merc_en',   // 中国地图
+			// map: 'us_aea',     // 美国地图
+			map: 'world_mill', // 世界地图
+
+
+			backgroundColor: 'transparent',
+			zoomMin: 0.9, // 鼠标缩放时的最小比例
+			zoomMax: 8.0, // 鼠标缩放时的最大比例
+			focusOn: {
+				x: 0.55,
+				y: 2,
+				scale: 0.9
+			},
+			regionStyle: {
+				initial: {
+					fill: '#e5e5e5',   // 地图颜色
+					"fill-opacity": 2, // 省份（州）是否隐藏，鼠标滑动时显示; 1：显示，2：隐藏。
+					stroke: 'none',
+					"stroke-width": 0,
+					"stroke-opacity": 1
+				},
+				hover: {
+					fill: '#ccc',  // 鼠标滑动至某省份的高亮颜色。
+					"fill-opacity": 0.8
+				},
+				selected: {
+					fill: 'yellow'
+				},
+				selectedHover: {}
+			},
+			markerStyle: {
+		        initial: {
+		            fill: '#fd8888', // 足迹位置的填充颜色
+		            stroke: '#fff'   // 足迹位置的描边颜色
+		        },
+				hover: {
+					fill: '#fd2020', // 鼠标滑动至足迹位置后的填充颜色
+					stroke: '#fff',  // 鼠标滑动至足迹位置后的描边颜色
+					"fill-opacity": 0.8
+				},
+		    },
+			markers: [ // 足迹位置
+
+				// {latLng: [纬度（保留两位小数）, 经度（保留两位小数）], name: '城市名称'},
+				// 参考谷歌地图即可
+
+				// 中国
+		        {latLng: [39.93, 116.06], name: '北京'},
+		        {latLng: [31.22, 121.14], name: '上海'},
+				{latLng: [31.32, 120.47], name: '苏州'},
+				{latLng: [32.09, 118.57], name: '南京'},
+				{latLng: [30.26, 120.00], name: '杭州'},
+				{latLng: [36.13, 120.19], name: '青岛'},
+				{latLng: [34.25, 108.80], name: '西安'},
+				{latLng: [25.10, 102.64], name: '昆明'},
+				{latLng: [25.28, 110.16], name: '桂林'},
+				{latLng: [22.35, 113.97], name: '香港'},
+				{latLng: [24.46, 118.04], name: '厦门'},
+				{latLng: [22.56, 113.89], name: '深圳'},
+				{latLng: [23.12, 112.89], name: '广州'},
+				{latLng: [30.65, 103.91], name: '深圳'},
+				{latLng: [26.86, 106.65], name: '贵阳'},
+				{latLng: [31.81, 119.77], name: '常州'},
+				{latLng: [25.57, 100.06], name: '大理白族自治州'},
+				{latLng: [27.19, 100.28], name: '丽江'},
+
+				// 韩国
+				{latLng: [33.50, 126.52], name: '济州'},
+				// 泰国
+				{latLng: [13.72, 100.47], name: '曼谷'},
+				{latLng: [7.88, 98.37], name: '普吉'},
+				// 斯里兰卡
+				{latLng: [6.92, 79.8], name: '科伦坡'},
+				// 卡塔尔
+				{latLng: [25.5, 51.04], name: '多哈'},
+				// 莫斯科
+				{latLng: [55.58, 36.72], name: '莫斯科'},
+				{latLng: [59.94, 29.76], name: '圣彼得堡'},
+				// 英国
+				{latLng: [51.53, -0.27], name: '伦敦'},
+				{latLng: [53.47, -2.30], name: '曼彻斯特'},
+				{latLng: [55.52, -4.24], name: '爱丁堡'},
+				{latLng: [56.54, -4.91], name: '格拉斯哥'},
+				// 爱尔兰
+				{latLng: [53.41, -6.29], name: '都柏林'},
+				// 芬兰
+				{latLng: [60.01, 24.63], name: '赫尔辛基'},
+				// 瑞典
+				{latLng: [59.30, 18.00], name: '斯德哥尔摩'},
+				{latLng: [57.70, 11.72], name: '哥德堡'},
+				// 丹麦
+				{latLng: [55.67, 12.46], name: '哥本哈根'},
+				// 挪威
+				{latLng: [59.89, 10.70], name: '奥斯陆'},
+				// 德国
+				{latLng: [48.15, 11.45], name: '慕尼黑'},
+				// 法国
+				{latLng: [48.86, 2.30], name: '巴黎'},
+				{latLng: [48.80, 2.09], name: '凡尔赛'},
+				{latLng: [46.56, 4.88], name: '图尔尼'},
+				// 瑞士
+				{latLng: [46.20, 6.12], name: '日内瓦'},
+				{latLng: [46.97, 7.42], name: '伯恩'},
+				// 意大利 & 梵蒂冈
+				{latLng: [45.40, 12.22], name: '威尼斯'},
+				{latLng: [45.46, 9.09], name: '米兰'},
+				{latLng: [41.91, 12.37], name: '罗马、梵蒂冈'},
+				{latLng: [43.78, 11.19], name: '佛罗伦萨'},
+				// 西班牙
+				{latLng: [40.43, -3.76], name: '马德里'},
+				{latLng: [41.39, 2.05], name: '巴塞罗那'},
+				{latLng: [37.38, -6.00], name: '塞维利亚'},
+				// 葡萄牙
+				{latLng: [41.16, -8.66], name: '波尔图'},
+				{latLng: [38.74, -9.20], name: '里斯本'},
+
+				// {latLng: [], name: ''},
+		        // {latLng: [46.06, 122.06], name: '内蒙古 - 乌兰浩特'}
+		    ]
+		});
+	</script>
+</html>
